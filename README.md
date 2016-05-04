@@ -1,6 +1,6 @@
 # newExposure
 
-useage:
+usage:
 
 1.include the js file in your web page
 
