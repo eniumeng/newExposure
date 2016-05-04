@@ -4,7 +4,7 @@
 
     The newExposure is a tool for collecting exposure info in web page when user scroll the page.
 
-    It can be used by passing request URL or callback function, and can be setted as doing once action or more.
+    It can be used by passing a request URL or a callback function, and can be setted as doing once action or more.
 
 
 
