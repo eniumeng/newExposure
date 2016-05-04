@@ -1,23 +1,25 @@
 # newExposure
 
-introduction:
+1. introduction:
 
 The newExposure is a tool for collecting exposure info in web page.
 
 It can be used by passing request URL or callback function, and can be setted as doing once action or more.
 
-usage:
 
-1.include the js file in your web page
 
-2.call the following method when you need to add exposure:
+2. usage:
 
-    newExposure.(ele, action, canRepeat)
+    step 1: include the js file in your web page
 
-    eg.
+    step 2: call the following method when you need to add exposure:
 
-    newExposure.(document.querySelector('#exp'), 'https://xxx.com/1.gif', false);
+        newExposure.(ele, action, canRepeat)
 
-    or.
+        eg.
 
-    newExposure.(document.querySelector('#exp'), function () {console.log('showing...');}, true);
+        newExposure.(document.querySelector('#exp'), 'https://xxx.com/1.gif', false);
+
+        or.
+
+        newExposure.(document.querySelector('#exp'), function () {console.log('showing...');}, true);
