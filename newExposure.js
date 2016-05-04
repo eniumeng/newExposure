@@ -2,7 +2,7 @@
 * @Author: niumeng
 * @Date:   2016-05-03 10:55:44
 * @Last Modified by:   niumeng
-* @Last Modified time: 2016-05-04 13:36:59
+* @Last Modified time: 2016-05-04 15:40:03
 */
 
 ;(function (win, doc) {
@@ -33,6 +33,8 @@
                     action = this._listeningEles[i].action;
 
                     action && action();
+
+                    this._listeningEles[i].doneOnce = true;
                 }
             }
         },
@@ -62,7 +64,7 @@
             listeningEle.canRepeat = canRepeat ? true : false;
             listeningEle.doneOnce = false;
 
-            console.log(listeningEle);
+            // console.log(listeningEle);
 
             this._listeningEles.push(listeningEle);
         },
@@ -74,8 +76,10 @@
                 return action;
             } else if (actionType == 'string') {
                 return function () {
+                    var url = (action.indexOf('?') > -1 ? action + '&timestamp=' + (new Date()).valueOf() : action + '?timestamp=' + (new Date()).valueOf());
+
                     var oImg = new Image();
-                    oImg.src = action;
+                    oImg.src = url;
                 };
             } else {
                 return null;
