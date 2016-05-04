@@ -2,7 +2,7 @@
 
 1. introduction:
 
-    The newExposure is a tool for collecting exposure info in web page.
+    The newExposure is a tool for collecting exposure info in web page when user scroll the page.
 
     It can be used by passing request URL or callback function, and can be setted as doing once action or more.
 
