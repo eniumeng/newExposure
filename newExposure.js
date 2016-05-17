@@ -2,7 +2,7 @@
 * @Author: niumeng
 * @Date:   2016-05-03 10:55:44
 * @Last Modified by:   niumeng
-* @Last Modified time: 2016-05-04 15:40:03
+* @Last Modified time: 2016-05-17 10:42:48
 */
 
 ;(function (win, doc) {
@@ -49,7 +49,8 @@
             var rect = ele.getBoundingClientRect();
             var threshold = 100;
 
-            if (((rect.top > 0) && (viewHeight - rect.top > threshold)) || ((rect.bottom > threshold) && (rect.bottom < viewHeight))) {
+            if (((rect.top > 0) && (viewHeight - rect.top > threshold)) || ((rect.bottom > threshold) && (rect.bottom < viewHeight))
+                || (rect.top <= 0 && rect.bottom >= viewHeight)) {
                 // console.log(ele);
 
                 return true;
