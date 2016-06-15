@@ -14,12 +14,12 @@
 
     step 2: call the following method when you need to add exposure:
 
-        newExposure.(ele, action, canRepeat)
+        newExposure.pushListeningEle(ele, action, canRepeat)
 
         eg.
 
-        newExposure.(document.querySelector('#exp'), 'https://xxx.com/1.gif', false);
+        newExposure.pushListeningEle(document.querySelector('#exp'), 'https://xxx.com/1.gif', false);
 
         or.
 
-        newExposure.(document.querySelector('#exp'), function () {console.log('showing...');}, true);
+        newExposure.pushListeningEle(document.querySelector('#exp'), function () {console.log('showing...');}, true);
