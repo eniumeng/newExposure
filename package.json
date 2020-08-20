@@ -1,0 +1,25 @@
+{
+  "name": "newexposure",
+  "version": "1.0.1",
+  "description": "A web broswer tool to help you to check if some element is in user's view",
+  "main": "newExposure.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eniumeng/newExposure.git"
+  },
+  "keywords": [
+    "exposure",
+    "view",
+    "browser",
+    "scroll"
+  ],
+  "author": "niumeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eniumeng/newExposure/issues"
+  },
+  "homepage": "https://github.com/eniumeng/newExposure#readme"
+}
