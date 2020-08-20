@@ -1,6 +1,6 @@
 {
   "name": "newexposure",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A web broswer tool to help you to check if some element is in user's view",
   "main": "newExposure.js",
   "scripts": {

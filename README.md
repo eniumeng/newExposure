@@ -12,32 +12,42 @@
 
     with npm:
 
-      ```bash
-      npm install --save newExposure
-      ```
+    ```bash
+    npm install --save newExposure
+    ```
 
-      or.
+    then:
 
-      download in your local project manually, then:
+    ```javascript
+    import newExposure from 'newexposure'
+    ```
 
-      ```html
-      <script src="js/newExposure.js"></script>
-      ```
+    or.
+
+    download in your local project manually
+
+    then:
+
+    ```html
+    <script src="js/newExposure.js"></script>
+    ```
 
     step 2: call the following method when you need to add exposure:
 
-      ```javascript
-      newExposure.pushListeningEle(ele, action, canRepeat)
-      ```
+    ```javascript
+    newExposure.pushListeningEle(ele, action, canRepeat)
+    ```
 
-      eg.
+    eg.
 
-      ```javascript
-      newExposure.pushListeningEle(document.querySelector('#exp'), 'https://xxx.com/1.gif', false);
-      ```
+    ```javascript
+    newExposure.pushListeningEle(document.querySelector('#exp'), 'https://xxx.com/1.gif', false);
+    ```
 
-      or.
+    or.
 
-      ```javascript
-      newExposure.pushListeningEle(document.querySelector('#exp'), function () {console.log('showing...');}, true);
-      ```
+    ```javascript
+    newExposure.pushListeningEle(document.querySelector('#exp'), () => {
+      console.log('showing...');
+    }, true);
+    ```
