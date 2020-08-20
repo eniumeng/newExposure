@@ -10,22 +10,34 @@
 
     step 1: include the js file in your web page
 
+    with npm:
+
+      ```bash
       npm install --save newExposure
+      ```
 
       or.
 
-      download in your local project, then:
+      download in your local project manually, then:
 
+      ```html
       <script src="js/newExposure.js"></script>
+      ```
 
     step 2: call the following method when you need to add exposure:
 
+      ```javascript
       newExposure.pushListeningEle(ele, action, canRepeat)
+      ```
 
       eg.
 
+      ```javascript
       newExposure.pushListeningEle(document.querySelector('#exp'), 'https://xxx.com/1.gif', false);
+      ```
 
       or.
 
+      ```javascript
       newExposure.pushListeningEle(document.querySelector('#exp'), function () {console.log('showing...');}, true);
+      ```
